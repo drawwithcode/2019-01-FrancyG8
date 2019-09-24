@@ -88,6 +88,16 @@ function draw() {
     text(s, width/2, height/2);
   pop();
 
+  push();
+    let t = 'move your mouse to change your reality';
+    strokeWeight(1);
+    stroke("white");
+    textStyle(ITALIC);
+    textSize(20);
+    textAlign(CENTER,CENTER);
+    text(t, width/2, height/7);
+  pop();
+
   // central animation
   translate(width/2,height/2);
   noFill();
@@ -121,7 +131,7 @@ function draw() {
   if (frameCount == 540 ) {
   push();
     let s = 'FIGHT THE DEMOGORGON';
-    fill('gray');
+    fill('red');
     noStroke();
     textStyle(BOLD);
     textSize(100);
